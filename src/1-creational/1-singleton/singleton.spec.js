@@ -7,8 +7,8 @@ describe('Creational: Singleton', () => {
 
     test('should work', () => {
         expect(true).toBeTruthy();
-        console.log(instance1.getArgs());
-        console.log(instance2.getArgs());
+        // console.log(instance1.getArgs());
+        // console.log(instance2.getArgs());
     });
 
     test('should be one instance only', () => {
