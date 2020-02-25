@@ -39,8 +39,5 @@ class Factory {
 }
 
 module.exports = {
-    Factory,
-    FullTime,
-    PartTime,
-    Temporary
+    Factory    
 };
