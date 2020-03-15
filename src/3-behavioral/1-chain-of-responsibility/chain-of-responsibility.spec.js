@@ -1,6 +1,6 @@
 const { MyCalculator } = require('./chain-of-responsibility');
 
-describe.only('Behavioral: chain of responsibility', () => {
+describe('Behavioral: chain of responsibility', () => {
 
     let calc0;
     let calc10;

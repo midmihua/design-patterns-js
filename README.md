@@ -111,3 +111,26 @@ The Chain of Responsibility pattern provides a chain of loosely coupled objects 
 An example of a chain-of-responsibility is event-bubbling in which an event propagates through a series of nested controls one of which may choose to handle the event.
 
 The Chain of Responsiblity patterns is related to the Chaining Pattern which is frequently used in JavaScript (jQuery makes extensive use of this pattern).
+
+> #### 2. Command
+
+The Command pattern encapsulates actions as objects. Command objects allow for loosely coupled systems by separating the objects that issue a request from the objects that actually process the request. These requests are called events and the code that processes the requests are called event handlers.
+
+Suppose you are building an application that supports the Cut, Copy, and Paste clipboard actions. These actions can be triggered in different ways throughout the app: by a menu system, a context menu (e.g. by right clicking on a textbox), or by a keyboard shortcut.
+
+Command objects allow you to centralize the processing of these actions, one for each operation. So, you need only one Command for processing all Cut requests, one for all Copy requests, and one for all Paste requests.
+
+Because commands centralize all processing, they are also frequently involved in handling Undo functionality for the entire application. 
+
+> #### 3. Iterator
+
+The Iterator pattern allows clients to effectively loop over a collection of objects
+
+A common programming task is to traverse and manipulate a collection of objects. These collections may be stored as an array or perhaps something more complex, such as a tree or graph structure. In addition, you may need to access the items in the collection in a certain order, such as, front to back, back to front, depth first (as in tree searches), skip evenly numbered objects, etc.
+
+The Iterator design pattern solves this problem by separating the collection of objects from the traversal of these objects by implementing a specialized iterator.
+
+Today, many languages have Iterators built-in by supporting 'for-each'-type constructs and IEnumerable and IEnumerator interfaces. However, JavaScript only supports basic looping in the form of for, for-in, while, and do while statements.
+
+The Iterator pattern allows JavaScript developers to design looping constructs that are far more flexible and sophisticated.
+
