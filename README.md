@@ -151,3 +151,28 @@ The Observer pattern offers a subscription model in which objects subscribe to a
 When building web apps you end up writing many event handlers. Event handlers are functions that will be notified when a certain event fires. These notifications optionally receive an event argument with details about the event (for example the x and y position of the mouse at a click event).
 
 The event and event-handler paradigm in JavaScript is the manifestation of the Observer design pattern. Another name for the Observer pattern is Pub/Sub, short for Publication/Subscription. 
+
+
+## SOLID
+
+> #### 1. Single Responsibility principle
+
+One class - one task|goal / one object - one task|goal
+
+> #### 2. Open-closed principle
+
+Class / Object is open for extension, but closed for modification
+
+> #### 3. Liskov Substitution principle
+
+Наследуемый класс должен дополнять (а не замещать) базовый класс. Соответственно, сущности переданные в базовый и наследуемый класс - должны вести себя одинаково
+
+> #### 4. Interface segregation principle
+
+Программные сущности не должны зависеть от методов (интерфейсов), которые они не используют. 
+Или, нельзя заставлять клиента реализовывать интерфейс, которым он не пользуется.
+
+> #### Dependency inversion principle
+
+Модули высокого уровня не должны зависеть от модулей более низкого уровня, все они должны зависеть от обстракций.
+А абстракции не должны зависеть от деталей, детали должны зависеть от абстракций.
